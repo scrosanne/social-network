@@ -1,0 +1,37 @@
+-- CREATE TABLE users (
+--     id SERIAL PRIMARY KEY,
+--     firstName VARCHAR(255) NOT NULL,
+--     lastName VARCHAR(255) NOT NULL,
+--     email VARCHAR(255) NOT NULL UNIQUE,
+--     password VARCHAR(255) NOT NULL,
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
+
+CREATE TABLE resetcode (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    code VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- ALTER TABLE users ADD COLUMN profile_pic_url VARCHAR(255);
+
+-- ALTER TABLE users ADD COLUMN bio TEXT;
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    firstName VARCHAR(255) NOT NULL,
+    lastName VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    profile_pic_url VARCHAR(255),
+    bio TEXT
+);
+
+CREATE TABLE messages (
+id SERIAL PRIMARY KEY,
+sender_id INTEGER NOT NULL REFERENCES users(id),
+message TEXT,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+);
