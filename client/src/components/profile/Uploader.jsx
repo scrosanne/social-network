@@ -2,10 +2,24 @@ export default function Uploader({ closeUploader, uploadImage }) {
     return (
         <div className="modal-uploader">
             <p onClick={() => closeUploader()}>x</p>
-            {/* <h3>change your profile picture</h3> */}
-            <input type="file" accept="image/png, image/jpeg" />
 
-            <input type="submit" onClick={() => uploadImage()} value="upload" />
+            <div className="modal-half-left">
+                <button className="btn-upload">choose file</button>
+                <input
+                    className="input-file"
+                    type="file"
+                    accept="image/png, image/jpeg"
+                />
+            </div>
+
+            <div className="modal-half-right">
+                <input
+                    className="submit-file"
+                    type="submit"
+                    onClick={() => uploadImage()}
+                    value="upload"
+                />
+            </div>
         </div>
     );
 }
