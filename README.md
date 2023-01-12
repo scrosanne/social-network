@@ -1,6 +1,6 @@
 # swapLab
 
-# features
+## features
 
 -   register/login
 -   find people
