@@ -3,6 +3,7 @@
 ## features
 
 -   register/login
+-   password reset
 -   find people
 -   send/accept friend requests
 -   chat
