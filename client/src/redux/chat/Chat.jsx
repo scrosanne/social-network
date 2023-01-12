@@ -32,17 +32,19 @@ export default function Chat() {
         <div className="chat">
             <h2>chatroom</h2>
             {/* I N P U T  A R E A */}
-            <div>
-                <div className="send-area">
+
+            <div className="send-area">
+                <div className="msg">
                     <textarea
                         name="message"
                         placeholder="write smth here "
                         onChange={(e) => msgInputChange(e)}
                         value={message}
                     ></textarea>
-                    <button className="friends-btn" onClick={() => msgSend()}>
-                        Send
-                    </button>
+                </div>
+
+                <div className="send">
+                    <button onClick={() => msgSend()}>✅</button>
                 </div>
             </div>
 

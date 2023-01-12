@@ -60,6 +60,58 @@ body {
     padding: 1%;
 }
 
+/* * * sending * * * * */
+.send-area {
+    display: flex;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.send-area .msg {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.msg textarea {
+    width: 100%;
+    font-style: italic;
+    font-weight: 200;
+    padding: 1%;
+
+    outline: none;
+    resize: none;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+}
+
+.send-area .send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+
+    border-radius: 10px;
+    background-color: #ff8510;
+}
+
+.send-area .send button {
+    display: flex;
+    justify-content: center;
+    /* margin-left: 35%; */
+    font-size: 1em;
+    border: 0;
+    box-shadow: none;
+}
+
+/* .send-area button {
+    width: 10%;
+    font-size: 1.3em;
+    background-color: white;
+    border: 0;
+    box-shadow: none;
+} */
+
 /* * * * * * * N A V B A R * * * * * * * */
 .navbar {
     display: flex;
