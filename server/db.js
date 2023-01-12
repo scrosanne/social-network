@@ -126,7 +126,7 @@ function addMessage(sender_id, message) {
 
 function getLastMessages() {
     return db.query(
-        "SELECT messages.id, messages.sender_id, messages.message, users.firstname, users.lastname, users.profile_pic_url FROM messages JOIN users ON messages.sender_id=users.id ORDER BY messages.created_at ASC LIMIT 10"
+        "SELECT messages.id, messages.sender_id, messages.message, users.firstname, users.lastname, users.profile_pic_url FROM messages JOIN users ON messages.sender_id=users.id ORDER BY messages.created_at DESC LIMIT 10"
     ).then((result) => result.rows);
 }
 
