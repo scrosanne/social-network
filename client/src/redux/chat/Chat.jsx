@@ -30,30 +30,10 @@ export default function Chat() {
 
     return (
         <div className="chat">
-            {/* L A S T  M E S S A G E S*/}
-            <ul>
-                {messages?.map((message) => {
-                    return (
-                        <li key={message.id}>
-                            <div>
-                                <div className="friend-result-pic">
-                                    <img src={message.profile_pic_url} alt="" />
-                                </div>
-
-                                <h5>
-                                    {message.firstname} {message.lastname}
-                                </h5>
-                            </div>
-
-                            <p>{message.message}</p>
-                        </li>
-                    );
-                })}
-            </ul>
-
+            <h2>chatroom</h2>
             {/* I N P U T  A R E A */}
             <div>
-                <div>
+                <div className="send-area">
                     <textarea
                         name="message"
                         placeholder="write smth here "
@@ -65,6 +45,27 @@ export default function Chat() {
                     </button>
                 </div>
             </div>
+
+            {/* L A S T  M E S S A G E S*/}
+            <ul>
+                {messages?.map((message) => {
+                    return (
+                        <li key={message.id}>
+                            <div className="friend-result-pic">
+                                <img src={message.profile_pic_url} alt="" />
+                            </div>
+
+                            <div className="message">
+                                <p>{message.message}</p>
+
+                                <p>
+                                    {message.firstname} {message.lastname}
+                                </p>
+                            </div>
+                        </li>
+                    );
+                })}
+            </ul>
         </div>
     );
 }
