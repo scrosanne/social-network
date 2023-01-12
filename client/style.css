@@ -109,14 +109,6 @@ body {
     background-color: white;
 }
 
-/* .send-area button {
-    width: 10%;
-    font-size: 1.3em;
-    background-color: white;
-    border: 0;
-    box-shadow: none;
-} */
-
 /* * * * * * * N A V B A R * * * * * * * */
 .navbar {
     display: flex;
@@ -195,6 +187,30 @@ body {
 }
 
 /* * * * * * F R I E N D S  * * * * * * * */
+
+.friends {
+    margin-top: -6%;
+    width: 70vw;
+    padding: 5%;
+    border-radius: 80px;
+}
+
+.friends h2 {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.friends .search-results ul {
+    margin: 3%;
+    padding: 2% 0 2% 0;
+}
+
+.friends .search-results ul li {
+    margin: 3% 0 3% 0;
+}
 
 /* * * * * *  S E A R C H  * * * * * * * */
 .find-people {

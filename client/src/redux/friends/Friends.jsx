@@ -48,7 +48,7 @@ export default function Friends() {
     };
 
     return (
-        <div>
+        <div className="friends">
             <h2>Friendship Requests</h2>
             <div className="search-results">
                 <ul>
