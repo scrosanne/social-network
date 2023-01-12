@@ -296,6 +296,11 @@ body {
     border-radius: 0;
 }
 
+.btn-upload:hover {
+    background-color: white;
+    border: none;
+}
+
 .modal-half-right {
     position: relative;
     width: 50%;
