@@ -1,6 +1,6 @@
 # swapLab
 
-#features
+# features
 
 -   register/login
 -   find people
@@ -8,7 +8,8 @@
 -   chat
 -   update profile pic and short bio
 
-##tech
+## tech
+
 JavaScript, React, Redux, PostgresSQL, SocketIO
 
 ## setup
