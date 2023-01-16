@@ -1,4 +1,4 @@
-# swapLab
+# social network
 
 ## features
 
